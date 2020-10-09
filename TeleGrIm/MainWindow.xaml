@@ -1,0 +1,56 @@
+﻿<pu:WindowX x:Class="TeleGrIm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeleGrIm"
+        mc:Ignorable="d"
+        Width="450"
+        WindowStartupLocation="CenterScreen"
+        Closing="WindowX_Closing" 
+        ResizeMode="NoResize"
+        pu:WindowXCaption.Foreground="#0066EF"
+            >
+    <pu:WindowXCaption.ExtendControl>
+        <Button Content="&#xf09b;"
+                FontFamily="{StaticResource FontAwesome}"
+                pu:ButtonHelper.ButtonStyle="Hollow"
+                pu:ButtonHelper.HoverBrush="#99999999"
+                Width="40"
+                BorderThickness="0"
+                Foreground="#3E3E3E"
+                FontSize="20" />
+    </pu:WindowXCaption.ExtendControl>
+
+    <Grid   Height="490.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox Height="40"
+             Width="320"
+             pu:TextBoxHelper.Watermark="please input your account" Margin="62,133,61.2,297.8"
+             pu:TextBoxHelper.CornerRadius="5"
+             pu:TextBoxHelper.FocusedBorderBrush="#0066EF"
+             pu:TextBoxHelper.FocusedShadowColor="#0066EF"
+             />
+        <PasswordBox Height="40"
+            Width="320"
+            pu:PasswordBoxHelper.CornerRadius="5"
+            pu:PasswordBoxHelper.Watermark="please input your password" Margin="62,145,61.2,206"
+            pu:PasswordBoxHelper.FocusedBorderBrush="#0066EF"
+            pu:PasswordBoxHelper.FocusedShadowColor="#0066EF"
+            pu:PasswordBoxHelper.IsShowPwdButtonVisible="True"
+         
+             />
+        <Button Height="40"
+            Width="320"
+          
+            Content="Login"
+            pu:ButtonHelper.ButtonStyle="Outline"
+            pu:ButtonHelper.HoverBrush="White"
+            pu:ButtonHelper.ClickCoverOpacity="0.8"
+            pu:ButtonHelper.CornerRadius="5" Margin="62,247,61.2,193" Foreground="#FFF9F9F9" BorderBrush="#FF0066EF" Background="#FF0066EF"/>
+        <Label Content="Sign in" HorizontalAlignment="Left" Margin="193,355,0,0" VerticalAlignment="Top" Foreground="#8c8a8a87"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="163,22,0,0" VerticalAlignment="Top" Width="100" Source="./static/logo.png"/>
+
+
+    </Grid>
+</pu:WindowX>
